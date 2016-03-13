@@ -4,42 +4,40 @@
     <meta charset="utf-8">
     <title>User profile</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/vendor/select2.css">
     <link rel="stylesheet" href="css/app.css" media="screen" charset="utf-8">
   </head>
   <body>
+
     <div id="main">
+
+      <!-- User Profile -->
       <div class="user-profile">
         <div class="pure-g d-table">
           <div class="pure-u-1-4 d-cell va-middle">
             <img src="img/user.jpg" alt="" />
           </div>
           <div class="user-profile-editable pure-u-3-4 d-cell">
-            <div class="user-profile-editable_name">
+            <a class="user-profile-editable_field" href="javascript:void(0);"
+                id="username"
+                data-type="text"
+                data-inputclass="user-profile-editable_field__username">
               John Smith
-            </div>
-            <div class="user-profile-editable_country">
+            </a>
+            <a class="user-profile-editable_field" href="javascript:void(0);"
+                id="country"
+                data-type="text"
+                data-inputclass="user-profile-editable_field__country">
               Portland, Oregon, USA
-            </div>
-            <div class="user-profile-editable_language">
+            </a>
+            <a class="user-profile-editable_field" href="javascript:void(0);"
+                id="language"
+                data-type="text"
+                data-inputclass="user-profile-editable_field__language">
               English
-            </div>
-            <div class="user-profile-editable_skills">
-              <a class="btn btn-tag btn-black" href="javascript:void(0);">
-                PHP
-              </a>
-              <a class="btn btn-tag btn-black" href="javascript:void(0);">
-                Ruby
-              </a>
-              <a class="btn btn-tag btn-gray" href="javascript:void(0);">
-                JavaScript
-              </a>
-              <a class="btn btn-tag btn-lightgray" href="javascript:void(0);">
-                ActionScript
-              </a>
-              <div>
-                <input type="text" name="skils" value="" placeholder="Add skills">
-              </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="pure-g d-table">
@@ -77,7 +75,7 @@
             </div>
             <div class="user-profile-cell_content">
               <a class="d-ib fullwidth ta-center" href="#" target="_blank">
-                <img src="img/code.jpg" alt="Code samples" height="165" />
+                <img src="img/code.jpg" alt="Code samples" />
               </a>
             </div>
           </div>
@@ -155,7 +153,16 @@
           </div>
         </div>
       </div>
+
       <a id="print-page" class="btn btn-tag btn-black btn-rounded" href="javascript:void(0);">Print this page</a>
+
     </div>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <script src="js/vendor/select2.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+
   </body>
 </html>
