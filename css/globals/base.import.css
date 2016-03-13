@@ -1,0 +1,16 @@
+/* Top level rules */
+
+html, body {
+  height: 100%;
+  font-size: 0.9em;
+  font-family: arial, sans-serif;
+  color: #4C4C4C;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 23px;
+  line-height: 1.5em;
+}
