@@ -5,21 +5,12 @@
   "author": "Yevgeny Yakushev <e.v.yakushev@gmail.com>",
   "main": "source/js/app.js",
   "devDependencies": {
-    "browserify": "~6.2.0",
-    "watchify": "~2.1.0",
     "less": "~2.5.3",
-    "minify": "~1.4.20",
-    "uglify-js": "~2.4.24"
+    "minify": "~1.4.20"
   },
   "scripts": {
-    "watch": "watchify -o public/js/bundle.js -v -d .",
-    "uglify": "browserify . | uglifyjs -cm > public/js/bundle.min.js",
-    "build:js": "browserify . > public/js/bundle.js",
     "minify": "minify public/css/app.css > public/css/app.min.css",
-    "build:css": "lessc source/css/app.less public/css/app.css",
-    "build": "npm run build:js && npm run build:css",
-    "release:js": "npm run build:js && npm run uglify",
-    "release:css": "npm run build:css && npm run minify",
-    "release": "npm run release:js && npm run release:css"
+    "build": "lessc source/css/app.less public/css/app.css",
+    "release": "npm run build:css && npm run minify"
   }
 }

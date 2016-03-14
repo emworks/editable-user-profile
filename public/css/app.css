@@ -274,7 +274,7 @@ ul {
   padding-bottom: 20px;
 }
 .user-profile .user-profile-cell .user-profile-cell-quote {
-  background: url('../../img/quote.jpg') no-repeat center;
+  background: url('../img/quote.jpg') no-repeat center;
   width: 210px;
   height: 174px;
   margin: 0 auto 10px;
