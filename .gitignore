@@ -1,1 +1,4 @@
+*.[oa]
+*~
+node_modules
 gh-pages/
