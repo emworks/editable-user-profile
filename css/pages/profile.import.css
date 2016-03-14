@@ -44,12 +44,6 @@
   height: 22px;
 }
 
-.user-profile .user-profile-editable_field#country:hover,
-.user-profile .user-profile-editable_field#language:hover {
-  font-size: 1.05em;
-  padding-left: 6px;
-}
-
 /* Editable container */
 
 .user-profile .editable-container.editable-inline {
@@ -95,11 +89,10 @@
 .user-profile .editable-container .editable-input input.user-profile-editable_field__language {
   padding: 0 0 0 5px;
   height: 22px;
-  margin-bottom: 3px;
 }
 
-.user-profile .editable-container .editable-input input.user-profile-editable_field__language {
-
+.user-profile .editable-container .editable-input input.user-profile-editable_field__country {
+  margin-bottom: 3px;
 }
 
 .user-profile .editable-container .editable-buttons {
@@ -108,7 +101,8 @@
   top: 0;
 }
 
-.user-profile .editable-container .editable-buttons button {
+.user-profile .editable-container .editable-buttons button,
+.user-profile .tagsinput button {
   border-radius: 50%;
   padding: 1px 4px;
   font-size: 0.7em;
@@ -117,9 +111,98 @@
   border: 0 none;
 }
 
-.user-profile .editable-container .editable-buttons button:hover {
+.user-profile .editable-container .editable-buttons button:hover,
+.user-profile .tagsinput button:hover {
   background-color: #5C5C5C;
 }
+
+/* Tags input override */
+
+.user-profile .tagsinput {
+  border: none;
+  background: none;
+  padding: 0;
+  height: 55px !important;
+  overflow: auto;
+  position: relative;
+  margin-top: 20px;
+  min-height: auto !important;
+  width: 70% !important;
+}
+
+.user-profile .tagsinput .tag {
+  padding: 0 1px 0 10px;
+}
+
+.user-profile .tagsinput .tag a {
+  position: absolute;
+  color: #ffffff;
+  background-color: #FA7471;
+  border-radius: 50%;
+  padding: 0px 4px;
+  font-size: 0.7em;
+  font-weight: 600;
+  height: 15px;
+  line-height: 14px;
+  top: 4px;
+  right: 3px;
+  display: none;
+}
+
+.user-profile .tagsinput .tag:hover a {
+  text-decoration: none;
+  display: block;
+}
+
+.user-profile .tagsinput div {
+  position: absolute;
+  bottom: 0;
+  width: 55%;
+}
+
+.user-profile .tagsinput input {
+  background: none;
+  border: 1px solid transparent;
+  width: 100% !important;
+  cursor: pointer;
+  font-size: 1.05em;
+  padding-left: 5px;
+  color: #4C4C4C !important;
+}
+
+.user-profile .tagsinput input:focus,
+.user-profile .tagsinput input.focused {
+  background-color: #ffffff;
+  border: 1px solid #1DFF1D;
+}
+
+.user-profile .tagsinput input + select {
+  position: absolute;
+  bottom: 2px;
+  height: 19px;
+  font-size: 0.8em;
+  right: 27px;
+  opacity: 0;
+}
+
+.user-profile .tagsinput input:focus + select,
+.user-profile .tagsinput input.focused + select {
+  opacity: 1;
+}
+
+.user-profile .tagsinput input ~ button {
+  position: absolute;
+  bottom: 4px;
+  right: 6px;
+  opacity: 0;
+}
+
+.user-profile .tagsinput input:focus ~ button,
+.user-profile .tagsinput input.focused ~ button {
+  opacity: 1;
+}
+
+/* Content */
 
 .user-profile .user-profile-cell .user-profile-cell_header {
   font-weight: 600;

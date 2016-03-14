@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/vendor/select2.css">
     <link rel="stylesheet" href="css/app.css" media="screen" charset="utf-8">
   </head>
   <body>
@@ -38,6 +37,7 @@
                 data-inputclass="user-profile-editable_field__language">
               English
             </a>
+            <input id="skills" value="PHP,Ruby,JavaScript,ActionScript" />
           </div>
         </div>
         <div class="pure-g d-table">
@@ -154,14 +154,15 @@
         </div>
       </div>
 
-      <a id="print-page" class="btn btn-tag btn-black btn-rounded" href="javascript:void(0);">Print this page</a>
+      <a id="print-page" class="btn btn-tag btn-rounded" href="javascript:void(0);">Print this page</a>
 
     </div>
 
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
-    <script src="js/vendor/select2.js" charset="utf-8"></script>
+    <script src="js/vendor/jquery.tagsinput.js" charset="utf-8"></script>
+    <script src="js/components/profile.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
 
   </body>

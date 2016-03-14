@@ -2,11 +2,12 @@
 
 #print-page {
   position: absolute;
-  right: 40px;
+  right: 35px;
   top: 30px;
 }
 
-.btn.btn-tag {
+.btn.btn-tag,
+.tagsinput .tag {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -19,14 +20,13 @@
   text-align: center;
   display: inline-block;
   border-radius: 2px;
+  background-color: #000000;
+  margin-right: 5px;
+  position: relative;
 }
 
 .btn.btn-rounded {
   border-radius: 1em;
-}
-
-.btn.btn-black {
-  background-color: #000000;
 }
 
 .btn.btn-gray {
