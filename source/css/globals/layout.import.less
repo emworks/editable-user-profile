@@ -9,18 +9,15 @@
 
 .pure-g {
   width: 100%;
-}
-
-.pure-g [class*="pure-u"] {
-  box-sizing: border-box;
-  font-family: arial;
-}
-
-.pure-g [class*="pure-u"].pure-u-bordered {
-  border-bottom: 1px solid #E6E6E6;
-  border-left: 1px solid #E6E6E6;
-}
-
-.pure-g [class*="pure-u"].pure-u-bordered.last-child {
-  border-right: 1px solid #E6E6E6;
+  [class*="pure-u"] {
+    box-sizing: border-box;
+    font-family: arial;
+    &.pure-u-bordered {
+      border-bottom: 1px solid #E6E6E6;
+      border-left: 1px solid #E6E6E6;
+      &.last-child {
+        border-right: 1px solid #E6E6E6;
+      }
+    }
+  }
 }
